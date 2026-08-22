@@ -419,6 +419,38 @@ ul, ol { list-style: none; }
 }
 .hero__sub b { color: var(--text); font-weight: 500; }
 .hero__sub .brand { color: var(--brand); }
+
+/* Hero 标签行:三哥 / 宋三继 / 1988 / 苏州 */
+.hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: clamp(13px, 1vw, 15px);
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 0.01em;
+  transition: border-color var(--t-fast) var(--ease), background var(--t-fast) var(--ease);
+}
+.tag:hover { border-color: var(--ink); background: var(--paper-warm); }
+.tag--ink {
+  background: var(--ink);
+  color: var(--text-on-ink);
+  border-color: transparent;
+}
+.tag--brand {
+  background: var(--brand);
+  color: var(--white);
+  border-color: transparent;
+}
 .hero__actions {
   display: flex;
   flex-wrap: wrap;

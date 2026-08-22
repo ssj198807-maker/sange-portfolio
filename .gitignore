@@ -6,3 +6,6 @@ v[0-9][a-z]-*.png
 
 # macOS
 .DS_Store
+
+# 图片处理前的原图备份(用于重做,含敏感信息)
+imgs/_orig/
