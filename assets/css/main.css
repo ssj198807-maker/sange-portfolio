@@ -123,12 +123,15 @@ ul, ol { list-style: none; }
 
 .h-section {
   font-family: var(--font-serif);
-  font-size: clamp(36px, 5vw, 72px);
+  font-size: clamp(32px, 4.2vw, 58px);
   font-weight: 400;
-  line-height: 1.05;
-  letter-spacing: -0.025em;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
   color: var(--text);
+  text-wrap: balance;
 }
+/* 仅对没有 <br> 的 h2(单行短标题)用 nowrap,避免"主业、副业、社群"被挤到第二行 */
+.h-section:not(:has(br)) { white-space: nowrap; }
 .section--ink .h-section { color: var(--text-on-ink); }
 
 .h-hero {
