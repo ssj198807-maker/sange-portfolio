@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>三哥 / 宋三继 — 苏州 · AI 陪跑顾问 · 清洗剂厂老板 · 吴桐荟发起人</title>
-<meta name="description" content="宋三继(江湖人称"三哥"),在苏州做清洗剂厂 13 年,工业里滚了 19 年。最近 5 年边做社群边陪企业把 AI 用起来。公众号「做清洗剂的三哥」,视频号「吴桐荟」。" />
+<title>三哥 / 宋三继 — 苏州 · 电子清洗液剂 + AI 应用落地 + 吴桐荟</title>
+<meta name="description" content="宋三继(江湖人称"三哥"),1988,苏州。主业电子清洗液剂 19 年,副业 AI 应用落地(自己先跑通,客户找过来),吴桐荟终身学习社群 5 年 150 场线下 + 111 场直播。公众号【吴桐荟】。" />
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,29 +14,26 @@
 <style>
 /* ============ DESIGN TOKENS ============ */
 :root {
-  /* 配色(无蓝无紫) */
-  --paper: #F1EBD9;        /* 宣纸白 主背景 */
-  --paper-warm: #E8DEC5;   /* 柔米 卡片 */
-  --paper-deep: #D8CFB6;   /* 深米 分隔 */
-  --ink: #1A1714;          /* 墨色 主文字 */
-  --ink-soft: #2B2722;     /* 浅墨 强调文字 */
-  --ink-mid: #5C5852;      /* 中墨 次文字 */
-  --ash: #8A847B;          /* 炭灰 辅助 */
+  --paper: #F1EBD9;
+  --paper-warm: #E8DEC5;
+  --paper-deep: #D8CFB6;
+  --ink: #1A1714;
+  --ink-soft: #2B2722;
+  --ink-mid: #5C5852;
+  --ash: #8A847B;
   --line: rgba(26, 23, 20, 0.16);
   --line-soft: rgba(26, 23, 20, 0.08);
-  --amber: #D9913A;        /* 沙金 主强调 */
-  --amber-deep: #B57520;   /* 深金 悬停 */
-  --olive: #3F4F3A;        /* 橄榄墨绿 副强调 */
-  --olive-light: #586B4F;  /* 浅橄榄 */
-  --crimson: #8B3A2E;      /* 暗赤 极少数警示 */
+  --amber: #D9913A;
+  --amber-deep: #B57520;
+  --olive: #3F4F3A;
+  --olive-light: #586B4F;
+  --crimson: #8B3A2E;
 
-  /* 字体 */
   --font-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
   --font-sans: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", "SF Mono", Consolas, monospace;
   --font-en: "Inter", "Helvetica Neue", Arial, sans-serif;
 
-  /* 节奏 */
   --max-w: 1320px;
   --pad-x: clamp(20px, 4vw, 56px);
   --gap: 24px;
@@ -44,20 +41,17 @@
   --radius-lg: 22px;
   --radius-pill: 999px;
 
-  /* 动效 */
   --ease: cubic-bezier(.22, 1, .36, 1);
   --ease-snap: cubic-bezier(.34, 1.56, .64, 1);
   --t-fast: 180ms;
   --t-mid: 280ms;
   --t-slow: 600ms;
 
-  /* 阴影 */
   --shadow-sm: 0 2px 4px rgba(26, 23, 20, 0.05);
   --shadow-md: 0 10px 28px rgba(26, 23, 20, 0.08);
   --shadow-lg: 0 18px 50px rgba(26, 23, 20, 0.12);
 }
 
-/* ============ RESET ============ */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 *::selection { background: var(--amber); color: var(--paper); }
 html { scroll-behavior: smooth; }
@@ -75,7 +69,6 @@ img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
 
-/* ============ LAYOUT ============ */
 .container {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -83,7 +76,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   padding-right: var(--pad-x);
 }
 
-/* ============ TYPE ============ */
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -101,11 +93,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   height: 1px;
   background: var(--amber);
 }
-.serif {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  letter-spacing: -0.01em;
-}
+.serif { font-family: var(--font-serif); font-weight: 400; letter-spacing: -0.01em; }
 .mono { font-family: var(--font-mono); }
 
 /* ============ TOP NAV ============ */
@@ -170,7 +158,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   transition: transform var(--t-fast) var(--ease), background var(--t-fast) var(--ease);
 }
 .topnav__cta:hover { background: var(--amber); color: var(--ink); transform: translateY(-1px); }
-
 @media (max-width: 768px) {
   .topnav__links a:not(.topnav__cta) { display: none; }
   .topnav__brand { font-size: 16px; }
@@ -259,7 +246,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .btn--ghost:hover { background: rgba(241, 235, 217, 0.1); border-color: var(--paper); transform: translateY(-2px); }
 .btn .arrow { transition: transform var(--t-fast) var(--ease); }
 .btn:hover .arrow { transform: translate(3px, -3px); }
-
 .hero__meta {
   display: flex;
   flex-wrap: wrap;
@@ -273,7 +259,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   text-transform: uppercase;
 }
 .hero__meta b { color: var(--paper); display: block; font-size: 14px; font-weight: 500; margin-bottom: 4px; }
-
 .hero__scroll {
   position: absolute;
   bottom: 24px;
@@ -381,7 +366,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   text-transform: uppercase;
   color: var(--paper);
 }
-
 .about__name {
   font-family: var(--font-serif);
   font-size: clamp(36px, 4.4vw, 64px);
@@ -399,11 +383,27 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   margin-left: 12px;
   vertical-align: middle;
 }
+.about__traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.about__traits span {
+  padding: 4px 12px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  color: var(--olive);
+  background: rgba(63, 79, 58, 0.1);
+  border: 1px solid rgba(63, 79, 58, 0.25);
+  border-radius: var(--radius-pill);
+}
 .about__lead {
   font-size: 18px;
   line-height: 1.6;
   color: var(--ink-soft);
-  margin: 28px 0 24px;
+  margin: 0 0 24px;
   max-width: 620px;
 }
 .about__lead b { color: var(--amber-deep); }
@@ -451,82 +451,137 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .about__stat:nth-child(2) { border-right: 0; }
 }
 
-/* ============ CURRENT WORK (8 projects grid) ============ */
-.work__list {
+/* ============ THREE PILLARS (主业+副业+社群) ============ */
+.pillars {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   border-top: 1px solid var(--line);
   border-left: 1px solid var(--line);
 }
-.work__item {
-  position: relative;
-  padding: 28px 24px;
+.pillar {
+  padding: 36px 28px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: var(--paper);
-  transition: background var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
-  cursor: default;
+  position: relative;
+  transition: background var(--t-fast) var(--ease);
 }
-.work__item:hover { background: var(--paper-warm); transform: translateY(-2px); }
-.work__no {
+.pillar:hover { background: var(--paper-warm); }
+.pillar__no {
   font-family: var(--font-mono);
   font-size: 10px;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   color: var(--ash);
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
-.work__name {
+.pillar__name {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 400;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
+  line-height: 1.1;
   color: var(--ink);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
-.work__type {
+.pillar__role {
   font-size: 12px;
-  color: var(--ink-mid);
-  margin-bottom: 18px;
-  font-family: var(--font-mono);
-  letter-spacing: 0.04em;
-}
-.work__status {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 11px;
-  color: var(--olive);
+  color: var(--amber-deep);
   font-family: var(--font-mono);
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  margin-bottom: 18px;
 }
-.work__status::before {
-  content: "";
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--olive);
-  box-shadow: 0 0 0 3px rgba(63, 79, 58, 0.18);
+.pillar__desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-mid);
+  margin-bottom: 18px;
 }
-.work__status--progress::before { background: var(--olive); }
-.work__status--mvp::before { background: var(--amber); box-shadow: 0 0 0 3px rgba(217, 145, 58, 0.2); }
-.work__status--prep::before { background: var(--ash); box-shadow: 0 0 0 3px rgba(138, 132, 123, 0.2); }
-.work__desc {
-  margin-top: 14px;
+.pillar__quote {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--olive);
+  line-height: 1.5;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 900px) { .pillars { grid-template-columns: 1fr; } }
+
+/* ============ METHOD (先赢后变) ============ */
+.method__quote {
+  font-family: var(--font-serif);
+  font-size: clamp(40px, 5vw, 72px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: var(--paper);
+  margin-bottom: 40px;
+  max-width: 1100px;
+}
+.method__quote em {
+  font-style: normal;
+  color: var(--amber);
+}
+.method__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(241, 235, 217, 0.2);
+}
+.method__step {
+  padding: 28px 0 28px 0;
+  border-bottom: 1px solid rgba(241, 235, 217, 0.2);
+  border-right: 1px solid rgba(241, 235, 217, 0.2);
+  padding-right: 24px;
+}
+.method__step:last-child { border-right: 0; padding-right: 0; }
+.method__step:not(:first-child) { padding-left: 24px; }
+.method__step__no {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--amber);
+  margin-bottom: 14px;
+}
+.method__step__name {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--paper);
+  margin-bottom: 10px;
+}
+.method__step__desc {
   font-size: 13px;
   line-height: 1.55;
-  color: var(--ink-mid);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height var(--t-mid) var(--ease);
+  color: rgba(241, 235, 217, 0.65);
 }
-.work__item:hover .work__desc { max-height: 200px; }
-@media (max-width: 1100px) {
-  .work__list { grid-template-columns: repeat(2, 1fr); }
+.method__compare {
+  margin-top: 56px;
+  padding: 24px 28px;
+  background: rgba(217, 145, 58, 0.08);
+  border: 1px solid rgba(217, 145, 58, 0.25);
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
 }
-@media (max-width: 600px) {
-  .work__list { grid-template-columns: 1fr; }
+.method__compare__col h4 {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 8px;
+}
+.method__compare__col p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(241, 235, 217, 0.85);
+}
+@media (max-width: 768px) {
+  .method__steps { grid-template-columns: 1fr; }
+  .method__step { border-right: 0; padding-left: 0 !important; }
+  .method__compare { grid-template-columns: 1fr; gap: 18px; }
 }
 
 /* ============ FEATURED PROJECTS ============ */
@@ -642,7 +697,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   backdrop-filter: blur(6px);
   border-radius: 4px;
 }
-
 @media (max-width: 900px) {
   .feature, .feature--rev { grid-template-columns: 1fr; }
   .feature--rev .feature__info { order: 1; }
@@ -650,90 +704,142 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .feature__visual { min-height: 280px; }
 }
 
-/* ============ ABILITIES ============ */
-.abilities__list { display: flex; flex-direction: column; }
-.ability {
+/* ============ TRAINING GALLERY (工作现场) ============ */
+.gallery {
   display: grid;
-  grid-template-columns: 80px 1fr 1.6fr auto;
-  gap: clamp(16px, 3vw, 48px);
-  align-items: center;
-  padding: 28px 0;
-  border-bottom: 1px solid rgba(241, 235, 217, 0.18);
-  transition: padding-left var(--t-fast) var(--ease);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
-.ability:first-child { border-top: 1px solid rgba(241, 235, 217, 0.18); }
-.ability:hover { padding-left: 12px; }
-.ability__no {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  color: var(--amber);
-}
-.ability__name {
-  font-family: var(--font-serif);
-  font-size: clamp(20px, 1.8vw, 28px);
-  font-weight: 400;
-  color: var(--paper);
-  letter-spacing: -0.01em;
-}
-.ability__desc {
-  font-size: 14px;
-  line-height: 1.55;
-  color: rgba(241, 235, 217, 0.7);
-}
-.ability__stars {
-  display: inline-flex;
-  gap: 4px;
-  font-family: var(--font-mono);
-  font-size: 14px;
-  letter-spacing: 0.1em;
-}
-.ability__stars .on { color: var(--amber); }
-.ability__stars .off { color: rgba(241, 235, 217, 0.25); }
-.abilities__weak {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: clamp(20px, 3vw, 48px);
-  margin-top: 56px;
-  padding: 28px 32px;
-  background: rgba(217, 145, 58, 0.08);
-  border: 1px solid rgba(217, 145, 58, 0.25);
+.gallery__item {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
   border-radius: var(--radius);
+  background: var(--paper-warm);
+  cursor: pointer;
+  transition: transform var(--t-fast) var(--ease);
 }
-.abilities__weak__label {
+.gallery__item:hover { transform: translateY(-3px); }
+.gallery__item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 800ms var(--ease);
+}
+.gallery__item:hover img { transform: scale(1.05); }
+.gallery__item::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(26,23,20,0.7) 100%);
+}
+.gallery__caption {
+  position: absolute;
+  left: 14px; bottom: 12px;
+  z-index: 1;
+  color: var(--paper);
+}
+.gallery__caption strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+.gallery__caption span {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(241, 235, 217, 0.75);
+}
+.gallery__item--wide { grid-column: span 2; aspect-ratio: 8 / 3; }
+.gallery__item--tall { grid-row: span 2; aspect-ratio: 4 / 6.05; }
+@media (max-width: 900px) {
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .gallery__item--wide { grid-column: span 2; aspect-ratio: 16 / 9; }
+  .gallery__item--tall { grid-row: span 1; aspect-ratio: 4 / 3; }
+}
+
+/* ============ SELF-BUILT SOFTWARE (自研软件) ============ */
+.sw__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.sw__card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  background: var(--paper-warm);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: transform var(--t-fast) var(--ease), background var(--t-fast) var(--ease);
+  text-decoration: none;
+  color: inherit;
+}
+.sw__card:hover { transform: translateY(-3px); background: var(--paper); }
+.sw__card--primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.sw__card--primary:hover { background: var(--olive); }
+.sw__card__tag {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 3px 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--amber);
+  background: rgba(217, 145, 58, 0.12);
+  border-radius: var(--radius-pill);
+  align-self: flex-start;
 }
-.abilities__weak__list {
+.sw__card--primary .sw__card__tag { color: var(--amber); background: rgba(217, 145, 58, 0.2); }
+.sw__card__name {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+.sw__card__kind {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ash);
+  margin-bottom: 14px;
+  letter-spacing: 0.06em;
+}
+.sw__card--primary .sw__card__kind { color: rgba(241, 235, 217, 0.6); }
+.sw__card__desc {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-mid);
+  flex: 1;
+}
+.sw__card--primary .sw__card__desc { color: rgba(241, 235, 217, 0.85); }
+.sw__card__url {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-mid);
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px 14px;
-  font-size: 14px;
-  color: rgba(241, 235, 217, 0.85);
-  line-height: 1.7;
+  align-items: center;
+  gap: 6px;
 }
-.abilities__weak__list li { display: inline-flex; align-items: center; gap: 8px; }
-.abilities__weak__list li::before { content: "—"; color: var(--amber); }
+.sw__card--primary .sw__card__url { border-top-color: rgba(241, 235, 217, 0.2); color: var(--paper); }
+.sw__card__url::after { content: "→"; transition: transform var(--t-fast) var(--ease); }
+.sw__card:hover .sw__card__url::after { transform: translate(3px, -3px); }
+@media (max-width: 900px) { .sw__list { grid-template-columns: 1fr; } }
 
-@media (max-width: 768px) {
-  .ability { grid-template-columns: 60px 1fr; row-gap: 8px; }
-  .ability__desc, .ability__stars { grid-column: 2; }
-}
-
-/* ============ WRITING (公众号) ============ */
+/* ============ WRITING ============ */
 .writing__grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: clamp(40px, 5vw, 80px);
   align-items: stretch;
 }
-.writing__list {
-  display: flex;
-  flex-direction: column;
-}
+.writing__list { display: flex; flex-direction: column; }
 .writing__post {
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -761,11 +867,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   color: var(--ink);
   margin-bottom: 10px;
 }
-.writing__post p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--ink-mid);
-}
+.writing__post p { font-size: 14px; line-height: 1.6; color: var(--ink-mid); }
 .writing__post__tag {
   display: inline-block;
   margin-top: 10px;
@@ -778,7 +880,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   background: rgba(63, 79, 58, 0.08);
   border-radius: var(--radius-pill);
 }
-
 .quote__card {
   position: relative;
   padding: clamp(32px, 4vw, 56px);
@@ -820,10 +921,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   color: var(--paper);
   margin-bottom: 32px;
 }
-.quote__card .quote__main em {
-  font-style: normal;
-  color: var(--amber);
-}
+.quote__card .quote__main em { font-style: normal; color: var(--amber); }
 .quote__card .quote__by {
   position: relative;
   font-family: var(--font-mono);
@@ -849,9 +947,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   border: 1px solid rgba(241, 235, 217, 0.18);
   border-radius: var(--radius-pill);
 }
-@media (max-width: 900px) {
-  .writing__grid { grid-template-columns: 1fr; }
-}
+@media (max-width: 900px) { .writing__grid { grid-template-columns: 1fr; } }
 
 /* ============ CONTACT ============ */
 .contact__wrap {
@@ -891,6 +987,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   padding: 22px 0;
   border-top: 1px solid rgba(241, 235, 217, 0.18);
   transition: padding-left var(--t-fast) var(--ease);
+  text-decoration: none;
+  color: inherit;
 }
 .contact__item:last-child { border-bottom: 1px solid rgba(241, 235, 217, 0.18); }
 .contact__item:hover { padding-left: 8px; }
@@ -926,14 +1024,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   gap: 6px;
   transition: gap var(--t-fast) var(--ease);
 }
-.contact__item__a:hover { gap: 10px; }
 .contact__item__a::after { content: "→"; transition: transform var(--t-fast) var(--ease); }
-.contact__item__a:hover::after { transform: translate(3px, -3px); }
-
+.contact__item:hover .contact__item__a::after { transform: translate(3px, -3px); }
 @media (max-width: 768px) {
   .contact__wrap { grid-template-columns: 1fr; gap: 32px; }
   .contact__item { grid-template-columns: 80px 1fr; }
-  .contact__item__a { grid-column: 2; padding-left: 0; }
+  .contact__item__a { grid-column: 2; }
 }
 
 /* ============ FOOTER ============ */
@@ -955,8 +1051,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .footer__inner b { color: var(--amber); font-weight: 500; }
 
-/* ============ REVEAL ANIMATIONS ============ */
-/* 默认就显示,JS 加载后 .motion-ready 才隐藏未触发的元素,避免无 JS 时全空 */
+/* ============ REVEAL ============ */
 .motion-ready [data-reveal] {
   opacity: 0;
   transform: translateY(20px);
@@ -986,7 +1081,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .hero__scroll .dot-pulse { animation: none; }
 }
 
-/* ============ RESPONSIVE ============ */
 @media (max-width: 1100px) {
   .feature { grid-template-columns: 1fr; }
   .feature__visual { min-height: 320px; }
@@ -1003,10 +1097,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   </a>
   <div class="topnav__links">
     <a href="#about">关于</a>
-    <a href="#work">现在的事</a>
-    <a href="#featured">项目</a>
-    <a href="#abilities">能力</a>
-    <a href="#writing">写作</a>
+    <a href="#pillars">三件事</a>
+    <a href="#method">方法</a>
+    <a href="#gallery">现场</a>
+    <a href="#software">自研</a>
     <a class="topnav__cta" href="#contact">联系我 <span aria-hidden="true">→</span></a>
   </div>
 </nav>
@@ -1018,29 +1112,30 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     <div class="hero__top" data-reveal>
       <span>个人作品集 · 2026</span>
       <span class="now">● 苏州 · 远程可协作</span>
-      <span>第 5 年 · 第 88 场直播</span>
+      <span>150 场线下 · 111 场直播</span>
     </div>
     <h1 class="hero__title" data-reveal>
-      不装。<br/>继续。
+      先赢后变。
     </h1>
     <p class="hero__sub" data-reveal>
-      宋三继(江湖人称<b>三哥</b>)。在苏州做清洗剂厂 13 年,工业里滚了 19 年。
-      最近 5 年开始边做社群边陪企业把 AI 用起来。<b>不卖工具,陪企业把 AI 干出活。</b>
+      宋三继,1988,苏州。<b>主业电子清洗液剂,做了 19 年</b>。AI 来了之后,
+      我先把自己的厂用 AI 跑通 —— 获客、管理、提效、团队协作,四件事。
+      客户看我跑通了,找过来,<b>副业就开了</b>。
     </p>
     <div class="hero__actions" data-reveal>
-      <a class="btn btn--primary" href="#featured">看我的工作 <span class="arrow" aria-hidden="true">→</span></a>
+      <a class="btn btn--primary" href="#pillars">看我在做什么 <span class="arrow" aria-hidden="true">→</span></a>
       <a class="btn btn--ghost" href="#contact">加我聊聊 <span class="arrow" aria-hidden="true">→</span></a>
     </div>
     <div class="hero__meta" data-reveal>
-      <div><b>19 年</b>工业品/轴承/清洗剂</div>
-      <div><b>4 家</b>年度 AI 陪跑客户</div>
-      <div><b>88 场</b>直播 + 72 场线下</div>
-      <div><b>1 个</b>公众号「做清洗剂的三哥」</div>
+      <div><b>19 年</b>电子清洗液剂主业</div>
+      <div><b>150 场</b>吴桐荟线下活动</div>
+      <div><b>111 场</b>个人直播</div>
+      <div><b>1 个</b>公众号【吴桐荟】</div>
     </div>
   </div>
   <div class="hero__scroll" aria-hidden="true">
     <span class="dot-pulse"></span>
-    <span>向下滚动 · 看看这个人的 4 张脸</span>
+    <span>向下滚动 · 看看这个人的 3 件事</span>
   </div>
 </header>
 
@@ -1050,57 +1145,66 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     <div class="section__head" data-reveal>
       <div>
         <div class="section__no">— 01 / 自我介绍</div>
-        <h2 class="section__title serif">宋三继,<br/>苏州老炮。</h2>
+        <h2 class="section__title serif">宋三继,<br/>苏州,1988。</h2>
       </div>
       <p class="section__sub">
-        19 年前在苏州卖工业品。后来自己开了清洗剂厂,做电子精密清洗剂,做到现在。
-        2021 年办了「吴桐荟」社群,88 场直播 + 72 场线下,把自己练成了一个有输出场景的人。
-        2023 年开始认真玩 AI,现在每年陪 4 家企业把 AI 用到工作里。
+        19 年前在苏州开始做电子清洗液剂。后来自己开了厂,做到现在。
+        2021 年办了【吴桐荟】终身学习社群,5 年 150 场线下 + 111 场直播。
+        2023 年开始认真玩 AI,先把自己的厂用 AI 跑通,然后客户找过来。
       </p>
     </div>
 
     <div class="about__grid">
       <div class="about__photo" data-reveal>
         <img src="./imgs/avatar.jpg" alt="三哥本人的照片" loading="lazy" onerror="this.style.display='none'" />
-        <div class="about__photo__caption">三哥 · 摄于 2024 苏州</div>
+        <div class="about__photo__caption">三哥 · 摄于苏州</div>
       </div>
       <div data-reveal>
-        <div class="about__name">宋三继 <em>JIM / 1970s</em></div>
+        <div class="about__name">宋三继 <em>1988</em></div>
+        <div class="about__traits">
+          <span>坚韧</span>
+          <span>具体</span>
+          <span>好奇</span>
+          <span>开放</span>
+        </div>
         <p class="about__lead">
-          一个人在工业里摸爬滚打 <b>19 年</b>,又在 AI 时代重新出发,把"不装"做成 IP 的苏州老板。
+          主业 <b>电子清洗液剂 19 年</b>,副业 <b>AI 应用落地</b>,社群 <b>吴桐荟 5 年</b>。
+          三件事不是兼职,是同一个人在不同场景里的三张脸。
         </p>
         <div class="about__story">
           <p>
-            <strong>左手做工厂,右手陪客户干 AI。</strong>
-            工厂是底气,AI 是杠杆。19 年的工业客户基础 + 4 年的 AI 折腾,这是我跟"刚毕业就教 AI 的人"不一样的地方。
+            <strong>副业不是我主动开启的。</strong>
+            是我自己先用 AI 帮助主业实现了 AI 获客、AI 管理、AI 提效、AI 团队协作。
+            然后因为爱分享、做直播,有相同需求的客户就主动找过来了。
           </p>
           <p>
-            <strong>嘴上讲真诚,脚底踩坑里。</strong>
-            我讲的事都是我自己踩过的。讲得清讲不清不重要,做过没做过,听的人一耳朵就能听出来。
+            <strong>我跟别人不一样的地方在这里。</strong>
+            别人一上来给企业搭知识库,按教科书干。我是先让你的一个部门、一个岗位,先赢一次。
+            <strong>先赢后变。</strong>老板看见 AI 真的能省时间、真的能多卖货,然后再全员推开。
           </p>
           <p>
-            <strong>AI 不是学会的,是骑上去的。</strong>
-            联机才能落地,一个人研究是研究不出感觉的。
-            所以我办社群、做直播,不是为了当老师,是为了找人一起骑。
+            <strong>脚底踩坑里,嘴上讲真诚。</strong>
+            19 年的工业底子,13 年的厂,5 年的社群。讲的事都是自己踩过的。
+            讲得清讲不清不重要,做过没做过,听的人一耳朵就能听出来。
           </p>
         </div>
 
         <div class="about__stats">
           <div class="about__stat">
-            <div class="n">19<span>+</span></div>
-            <span class="l">工业品 / 轴承 / 清洗剂</span>
+            <div class="n">19<span>年</span></div>
+            <span class="l">电子清洗液剂主业</span>
           </div>
           <div class="about__stat">
-            <div class="n">13<span>年</span></div>
-            <span class="l">清洗剂厂经营</span>
+            <div class="n">150<span>场</span></div>
+            <span class="l">吴桐荟线下活动</span>
           </div>
           <div class="about__stat">
-            <div class="n">88<span>场</span></div>
-            <span class="l">吴桐荟直播</span>
+            <div class="n">111<span>场</span></div>
+            <span class="l">个人直播</span>
           </div>
           <div class="about__stat">
-            <div class="n">4<span>家</span></div>
-            <span class="l">年度 AI 陪跑客户</span>
+            <div class="n">5<span>年</span></div>
+            <span class="l">吴桐荟社群</span>
           </div>
         </div>
       </div>
@@ -1108,150 +1212,125 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   </div>
 </section>
 
-<!-- ============ CURRENT WORK (8 projects grid) ============ -->
-<section class="section section--warm" id="work">
+<!-- ============ THREE PILLARS (主业+副业+社群) ============ -->
+<section class="section section--warm" id="pillars">
   <div class="container">
     <div class="section__head" data-reveal>
       <div>
-        <div class="section__no">— 02 / 现在手上的事</div>
+        <div class="section__no">— 02 / 三件事</div>
         <h2 class="section__title serif">不是简历,<br/>是工作台。</h2>
       </div>
       <p class="section__sub">
-        这 8 个项目是我现在同时在推的事。有的做了 5 年,有的刚开始筹备。每一件都不外包给"以后再说"。
+        主业、副业、社群,三件事同时在做。每件都不外包给"以后再说"。
+        顺序是:主业先跑通 → 副业客户找过来 → 社群让一群人一起骑。
       </p>
     </div>
 
-    <div class="work__list" data-reveal>
-      <div class="work__item">
-        <div class="work__no">01</div>
-        <div class="work__name">吴桐荟</div>
-        <div class="work__type">个人 IP · 社群</div>
-        <div class="work__status work__status--progress">进行中 · 5 年</div>
-        <div class="work__desc">2021.07 创办的苏州得到同学社群。88 场直播 + 72 场线下,读书会、企业参访、AI 分享、私董会。练习场。</div>
+    <div class="pillars" data-reveal>
+      <article class="pillar">
+        <div class="pillar__no">— 01 / 主业</div>
+        <div class="pillar__name">电子清洗液剂</div>
+        <div class="pillar__role">19 YEARS · 苏州</div>
+        <p class="pillar__desc">
+          工业里卖了 19 年,自己开厂做了 13 年。电子精密清洗剂,从研发到销售全链路。
+          客户基础和现金流的来源,也是我所有身份的安全感底盘。
+        </p>
+        <div class="pillar__quote">"AI 来之前,我就是个厂里小老板。13 年没白干 —— 才有资格跟客户讲'我们这行真的难'。"</div>
+      </article>
+      <article class="pillar">
+        <div class="pillar__no">— 02 / 副业</div>
+        <div class="pillar__name">AI 应用落地</div>
+        <div class="pillar__role">企业 AI 落地 · 服务</div>
+        <p class="pillar__desc">
+          不是主动开启。先把自己的主业用 AI 跑通 —— 获客、管理、提效、团队协作四件。
+          客户看结果找过来,副业就开始了。SKF / 微纳净 / 律师 / 方正智谷都是这么来的。
+        </p>
+        <div class="pillar__quote">"副业不是我主动开启的。是客户看我自己跑通了,主动找过来的。"</div>
+      </article>
+      <article class="pillar">
+        <div class="pillar__no">— 03 / 社群</div>
+        <div class="pillar__name">吴桐荟</div>
+        <div class="pillar__role">苏州 · 终身学习</div>
+        <p class="pillar__desc">
+          2021.07 创办。苏州本地得到同学组成的终身学习者社群。
+          5 年没断更,150 场线下 + 111 场直播。读书会、企业参访、AI 分享、私董会,啥都聊。
+        </p>
+        <div class="pillar__quote">"没有这个社群,我后面陪客户做 AI 落地,根本没底气。这是练习场。"</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ METHOD (先赢后变) ============ -->
+<section class="section section--alt" id="method">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <div>
+        <div class="section__no">— 03 / 我的方法</div>
+        <h2 class="section__title serif">先赢后变。</h2>
       </div>
-      <div class="work__item">
-        <div class="work__no">02</div>
-        <div class="work__name">清洗剂厂</div>
-        <div class="work__type">实体业务 · 工厂</div>
-        <div class="work__status work__status--progress">进行中 · 13 年</div>
-        <div class="work__desc">苏州。电子精密清洗剂,研发 + 销售。现金流的来源,客户基础的来源,也是我所有身份的安全感底盘。</div>
+      <p class="section__sub">
+        四个字讲清楚:不先上知识库,先让你的一个部门、一个岗位,先赢一次。
+        老板看见 AI 真的能用,再全员推开。这是跟"教科书派"最不一样的地方。
+      </p>
+    </div>
+
+    <p class="method__quote" data-reveal>
+      先让你的一个部门、<em>一个岗位</em>,<br/>先赢一次。<br/>之后,才是全员。
+    </p>
+
+    <div class="method__steps" data-reveal>
+      <div class="method__step">
+        <div class="method__step__no">— STEP 01</div>
+        <div class="method__step__name">从个人和部门开始</div>
+        <p class="method__step__desc">不要求公司整体转型。从一个具体的人、具体的工作场景开始,把 AI 工具先跑通。</p>
       </div>
-      <div class="work__item">
-        <div class="work__no">03</div>
-        <div class="work__name">SKF 经销</div>
-        <div class="work__type">客户 · 年付</div>
-        <div class="work__status work__status--progress">进行中</div>
-        <div class="work__desc">容知日新三层销售法的陪跑对象。工业设备代理的 AI 化改造,PPT/客诉失效分析报告全部走 AI 流水线。</div>
+      <div class="method__step">
+        <div class="method__step__no">— STEP 02</div>
+        <div class="method__step__name">先获得局部胜利</div>
+        <p class="method__step__desc">让一个人先多卖 5 单、让一份报告少花 2 小时。让老板亲眼看见价值,不靠 PPT。</p>
       </div>
-      <div class="work__item">
-        <div class="work__no">04</div>
-        <div class="work__name">微纳净</div>
-        <div class="work__type">客户 · 年付</div>
-        <div class="work__status work__status--progress">进行中</div>
-        <div class="work__desc">水滴侠® 清洗剂产品的数字人 + AI 知识库。SMT 行业的工业清洗场景,品牌 + 销售资料全链路 AI 化。</div>
+      <div class="method__step">
+        <div class="method__step__no">— STEP 03</div>
+        <div class="method__step__name">之后才是全员</div>
+        <p class="method__step__desc">胜利看得见,推广才推得动。先把"AI 真能用"这件事在公司里变成共识。</p>
       </div>
-      <div class="work__item">
-        <div class="work__no">05</div>
-        <div class="work__name">律师团队</div>
-        <div class="work__type">客户 · 年付</div>
-        <div class="work__status work__status--progress">进行中</div>
-        <div class="work__desc">AI 知识库 + 诉讼辅助系统。法律文书检索、判例整理、合同审阅全部接入 AI,律师从文书里解放出来。</div>
+    </div>
+
+    <div class="method__compare" data-reveal>
+      <div class="method__compare__col">
+        <h4>— 教科书派</h4>
+        <p>上来给企业搭知识库、定 SOP、做全员培训。先搞"系统",后看"结果"。</p>
       </div>
-      <div class="work__item">
-        <div class="work__no">06</div>
-        <div class="work__name">融智 AI</div>
-        <div class="work__type">自有产品 · 新</div>
-        <div class="work__status work__status--prep">筹备中</div>
-        <div class="work__desc">设备监测订阅服务。订阅模式 + 预测性维护,从一次性销售转向持续服务。已经签下第一个年度客户。</div>
-      </div>
-      <div class="work__item">
-        <div class="work__no">07</div>
-        <div class="work__name">数字人产品</div>
-        <div class="work__type">自有产品 · MVP</div>
-        <div class="work__status work__status--mvp">MVP</div>
-        <div class="work__desc">数字分身 + 直播话术 + 客服问答。8 个 Agent 协同,把"老板不在公司也能干"这件事,做成一个产品。</div>
-      </div>
-      <div class="work__item">
-        <div class="work__no">08</div>
-        <div class="work__name">AI 学习小组</div>
-        <div class="work__type">社群子项目</div>
-        <div class="work__status work__status--progress">进行中</div>
-        <div class="work__desc">吴桐荟延伸出的 AI 共同体。50+ 同学,每周一次直播作业,一起把"学到的"变成"用上的"。</div>
+      <div class="method__compare__col">
+        <h4>— 我(先赢后变)</h4>
+        <p>先把 AI 跑在我自己的厂里,跑通了、看见数了,再讲给别人听。客户看到的是结果,不是方案。</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ FEATURED PROJECTS ============ -->
+<!-- ============ FEATURED PROJECTS (精选 4 件) ============ -->
 <section class="section" id="featured">
   <div class="container">
     <div class="section__head" data-reveal>
       <div>
-        <div class="section__no">— 03 / 挑 4 件认真说</div>
-        <h2 class="section__title serif">不是 8 件,<br/>是 4 件 + 4 个边角。</h2>
+        <div class="section__no">— 04 / 现在手上的事</div>
+        <h2 class="section__title serif">挑 4 件,<br/>认真说。</h2>
       </div>
       <p class="section__sub">
-        上面的网格是全部手上的事,这里挑 4 件深入讲讲 ——
-        社群、陪跑、工厂、产品,正好是我这个人的四个面。
+        主业、副业、社群、自研 —— 我手上最重要的 4 件事。下面挑出来认真说。
       </p>
     </div>
 
-    <!-- 1. 吴桐荟 -->
+    <!-- 1. 主业:电子清洗液剂 -->
     <article class="feature" data-reveal>
       <div class="feature__info">
         <div class="feature__index">
-          <span class="no">01</span><span>WUTONGHUI</span><span class="line"></span><span>2021—NOW</span>
+          <span class="no">01</span><span>主业 / MAIN</span><span class="line"></span><span>2007—NOW</span>
         </div>
-        <h3 class="feature__title">吴桐荟</h3>
-        <p class="feature__type">一个苏州本地、得到同学圈子的练习场。5 年没断更,88 场直播 + 72 场线下活动,从读书会到 AI 分享到私董会,啥都聊。</p>
-        <dl class="feature__facts">
-          <div class="feature__fact"><dt>发起时间</dt><dd>2021 年 7 月</dd></div>
-          <div class="feature__fact"><dt>形态</dt><dd>线上直播 + 线下参访</dd></div>
-          <div class="feature__fact"><dt>频次</dt><dd>每周一场直播</dd></div>
-          <div class="feature__fact"><dt>角色</dt><dd>发起人 + 主理人</dd></div>
-        </dl>
-        <p class="feature__type" style="margin-bottom: 0; color: var(--ink-mid); font-size: 13px;">
-          这不是 IP 包装,这是练习场。没有这个社群,我后面陪客户做 AI 陪跑,根本没底气。
-        </p>
-      </div>
-      <div class="feature__visual">
-        <img src="./imgs/project-wutonghui.jpg" alt="吴桐荟社群 — 一群人围坐分享" loading="lazy" onerror="this.style.display='none'" />
-        <div class="feature__visual__caption">WUTONGHUI · 苏州 · 2021—</div>
-      </div>
-    </article>
-
-    <!-- 2. AI 陪跑 -->
-    <article class="feature feature--rev" data-reveal>
-      <div class="feature__info">
-        <div class="feature__index">
-          <span class="no">02</span><span>AI ESCORT</span><span class="line"></span><span>4 家年付</span>
-        </div>
-        <h3 class="feature__title">AI 陪跑顾问</h3>
-        <p class="feature__type">4 家年度客户,签的是"陪他们把 AI 用到工作里、产生价值"的合同。已签 3 万顾问单,模式跑通,准备复制。</p>
-        <dl class="feature__facts">
-          <div class="feature__fact"><dt>服务模式</dt><dd>年度陪跑顾问</dd></div>
-          <div class="feature__fact"><dt>当前客户</dt><dd>SKF / 微纳净 / 律师 / 数字人</dd></div>
-          <div class="feature__fact"><dt>核心方法</dt><dd>找 → 试 → 调 三步法</dd></div>
-          <div class="feature__fact"><dt>承诺</dt><dd>不卖工具,陪出活</dd></div>
-        </dl>
-        <p class="feature__type" style="margin-bottom: 0; color: var(--ink-mid); font-size: 13px;">
-          我讲的是"怎么让员工干活",不是"工具列表"。这是跟 99% 的 AI 培训不一样的地方。
-        </p>
-      </div>
-      <div class="feature__visual">
-        <img src="./imgs/project-ai-escort.jpg" alt="AI 陪跑 — 中心节点连接工业场景" loading="lazy" onerror="this.style.display='none'" />
-        <div class="feature__visual__caption">AI ESCORT · 找 → 试 → 调</div>
-      </div>
-    </article>
-
-    <!-- 3. 清洗剂厂 -->
-    <article class="feature" data-reveal>
-      <div class="feature__info">
-        <div class="feature__index">
-          <span class="no">03</span><span>FACTORY</span><span class="line"></span><span>2007—NOW</span>
-        </div>
-        <h3 class="feature__title">清洗剂厂</h3>
-        <p class="feature__type">苏州。电子精密清洗剂,研发 + 销售。19 年工业经验,13 年工厂经营。客户基础和现金流的来源,也是我所有身份的安全感底盘。</p>
+        <h3 class="feature__title">电子清洗液剂</h3>
+        <p class="feature__type">苏州。19 年工业品经验,13 年自营工厂。电子精密清洗剂,从研发到销售全链路。客户基础、现金流、也是我所有身份的底盘。</p>
         <dl class="feature__facts">
           <div class="feature__fact"><dt>产品</dt><dd>电子精密清洗剂</dd></div>
           <div class="feature__fact"><dt>形态</dt><dd>研发 + 销售</dd></div>
@@ -1259,95 +1338,198 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
           <div class="feature__fact"><dt>位置</dt><dd>江苏苏州</dd></div>
         </dl>
         <p class="feature__type" style="margin-bottom: 0; color: var(--ink-mid); font-size: 13px;">
-          在 AI 时代之前我就是个厂里小老板。这 13 年没白干 —— 才有资格跟客户讲"我们这行真的难"。
+          这是 13 年没白干的底盘。没有这个底,客户听我讲"AI 真的能用"的时候,不会信。
         </p>
       </div>
       <div class="feature__visual">
-        <img src="./imgs/project-factory.jpg" alt="清洗剂厂 — 暖金水滴与陶器" loading="lazy" onerror="this.style.display='none'" />
-        <div class="feature__visual__caption">FACTORY · 13 YEARS</div>
+        <img src="./imgs/project-factory.jpg" alt="电子清洗液剂 — 暖金水滴与陶器" loading="lazy" onerror="this.style.display='none'" />
+        <div class="feature__visual__caption">MAIN · 19 YEARS</div>
       </div>
     </article>
 
-    <!-- 4. 数字人产品 -->
+    <!-- 2. 副业:AI 应用落地 -->
     <article class="feature feature--rev" data-reveal>
       <div class="feature__info">
         <div class="feature__index">
-          <span class="no">04</span><span>DIGITAL TWIN</span><span class="line"></span><span>MVP</span>
+          <span class="no">02</span><span>副业 / AI ESCORT</span><span class="line"></span><span>2023—NOW</span>
         </div>
-        <h3 class="feature__title">数字人产品</h3>
-        <p class="feature__type">把"老板不在公司也能干"做成一个产品。数字分身 + 直播话术 + 客服问答,8 个 Agent 协同,自用先跑通,再做客户。</p>
+        <h3 class="feature__title">企业 AI 落地</h3>
+        <p class="feature__type">SKF / 微纳净 / 律师团队 / 方正智谷 …… 都是看我自己的厂跑通了,主动找过来的客户。我陪他们用 AI 获客、AI 管理、AI 提效、AI 团队协作。</p>
         <dl class="feature__facts">
-          <div class="feature__fact"><dt>形态</dt><dd>SaaS / 自有产品</dd></div>
-          <div class="feature__fact"><dt>核心</dt><dd>数字分身 + 直播话术</dd></div>
-          <div class="feature__fact"><dt>架构</dt><dd>8 Agent 协同</dd></div>
-          <div class="feature__fact"><dt>状态</dt><dd>MVP 验证中</dd></div>
+          <div class="feature__fact"><dt>服务模式</dt><dd>企业 AI 落地陪跑</dd></div>
+          <div class="feature__fact"><dt>核心场景</dt><dd>获客 / 管理 / 提效 / 协作</dd></div>
+          <div class="feature__fact"><dt>核心方法</dt><dd>先赢后变</dd></div>
+          <div class="feature__fact"><dt>行业</dt><dd>工业 / 法律 / 服务</dd></div>
         </dl>
         <p class="feature__type" style="margin-bottom: 0; color: var(--ink-mid); font-size: 13px;">
-          这个产品的客户是「我先自己用」 —— 验证了再卖给跟我一样的 OPC 老板。
+          我不卖工具。我讲的是"怎么让一个员工多干一件事",不是"工具列表"。
         </p>
       </div>
       <div class="feature__visual">
-        <img src="./imgs/project-digital-human.jpg" alt="数字人产品 — 黑立方体与暖金眼" loading="lazy" onerror="this.style.display='none'" />
-        <div class="feature__visual__caption">DIGITAL TWIN · MVP</div>
+        <img src="./imgs/project-ai-escort.jpg" alt="AI 应用落地 — 中心节点连接工业场景" loading="lazy" onerror="this.style.display='none'" />
+        <div class="feature__visual__caption">AI ESCORT · 先赢后变</div>
+      </div>
+    </article>
+
+    <!-- 3. 社群:吴桐荟 -->
+    <article class="feature" data-reveal>
+      <div class="feature__info">
+        <div class="feature__index">
+          <span class="no">03</span><span>社群 / WUTONGHUI</span><span class="line"></span><span>2021.07—NOW</span>
+        </div>
+        <h3 class="feature__title">吴桐荟</h3>
+        <p class="feature__type">苏州本地、得到同学圈组成的终身学习者社群。5 年没断更,150 场线下活动 + 111 场直播。从读书会到 AI 分享到私董会,啥都聊。</p>
+        <dl class="feature__facts">
+          <div class="feature__fact"><dt>发起时间</dt><dd>2021 年 7 月</dd></div>
+          <div class="feature__fact"><dt>形态</dt><dd>线上直播 + 线下活动</dd></div>
+          <div class="feature__fact"><dt>频次</dt><dd>每周一场直播</dd></div>
+          <div class="feature__fact"><dt>角色</dt><dd>发起人 + 主理人</dd></div>
+        </dl>
+        <p class="feature__type" style="margin-bottom: 0; color: var(--ink-mid); font-size: 13px;">
+          不是 IP 包装,是练习场。没有这个社群,我后面陪客户做 AI 落地,根本没底气。
+        </p>
+      </div>
+      <div class="feature__visual">
+        <img src="./imgs/project-wutonghui.jpg" alt="吴桐荟社群 — 一群人围坐分享" loading="lazy" onerror="this.style.display='none'" />
+        <div class="feature__visual__caption">WUTONGHUI · 苏州 · 5 YEARS</div>
+      </div>
+    </article>
+
+    <!-- 4. 自研:吴桐荟剪辑 -->
+    <article class="feature feature--rev" data-reveal>
+      <div class="feature__info">
+        <div class="feature__index">
+          <span class="no">04</span><span>自研 / SELF-BUILT</span><span class="line"></span><span>正在用</span>
+        </div>
+        <h3 class="feature__title">吴桐荟剪辑</h3>
+        <p class="feature__type">我自己开发、给直播复盘用的视频剪辑工具。先自己用,跑通了,再考虑给跟我一样的人(需要频繁产出视频内容的 OPC 老板)。</p>
+        <dl class="feature__facts">
+          <div class="feature__fact"><dt>形态</dt><dd>Web 工具</dd></div>
+          <div class="feature__fact"><dt>用途</dt><dd>直播 / 课程 / 短视频</dd></div>
+          <div class="feature__fact"><dt>状态</dt><dd>我自己在用</dd></div>
+          <div class="feature__fact"><dt>位置</dt><dd>GitHub Pages</dd></div>
+        </dl>
+        <p class="feature__type" style="margin-bottom: 0; color: var(--ink-mid); font-size: 13px;">
+          我电脑里有些软件,是自己开发的。造工具这件事,跟你"用工具"是两回事。
+        </p>
+      </div>
+      <div class="feature__visual">
+        <img src="./imgs/project-digital-human.jpg" alt="自研软件 — 数字孪生感的极简视觉" loading="lazy" onerror="this.style.display='none'" />
+        <div class="feature__visual__caption">SELF-BUILT · 正在用</div>
       </div>
     </article>
   </div>
 </section>
 
-<!-- ============ ABILITIES ============ -->
-<section class="section section--alt" id="abilities">
+<!-- ============ TRAINING GALLERY (工作现场) ============ -->
+<section class="section" id="gallery">
   <div class="container">
     <div class="section__head" data-reveal>
       <div>
-        <div class="section__no">— 04 / 能力圈 + 短板</div>
-        <h2 class="section__title serif">不装地,<br/>摆一摆。</h2>
+        <div class="section__no">— 05 / 工作现场</div>
+        <h2 class="section__title serif">不写案例,<br/>给看现场。</h2>
       </div>
       <p class="section__sub">
-        知道自己会什么,知道自己不会什么,客户要的其实是后者。
-        我不会的请人来补,会的,陪你干到底。
+        下面是这两年我去过的企业内训现场。SKF / 微纳净 / 律师 / 方正智谷……都是看我跑通了,找我过去的。
       </p>
     </div>
 
-    <div class="abilities__list" data-reveal>
-      <div class="ability">
-        <div class="ability__no">01</div>
-        <div class="ability__name">工业客户关系</div>
-        <div class="ability__desc">19 年+ 轴承、清洗剂、SMT 设备行业的客户积累。苏州/山东商会/得到同学圈三圈叠加。</div>
-        <div class="ability__stars"><span class="on">★</span><span class="on">★</span><span class="on">★</span></div>
+    <div class="gallery" data-reveal>
+      <div class="gallery__item gallery__item--wide">
+        <img src="./imgs/training-1-vivo.jpg" alt="工厂内训 — 2026.06.20" loading="lazy" onerror="this.style.display='none'" />
+        <div class="gallery__caption">
+          <strong>工厂内训</strong>
+          <span>2026.06.20 · 苏州</span>
+        </div>
       </div>
-      <div class="ability">
-        <div class="ability__no">02</div>
-        <div class="ability__name">AI 应用落地</div>
-        <div class="ability__desc">知识库 / ERP / CRM / 获客系统 / 数字人全栈。OpenClaw/Codex/DeepSeek 都在自家机器上跑过。</div>
-        <div class="ability__stars"><span class="on">★</span><span class="on">★</span><span class="on">★</span></div>
+      <div class="gallery__item">
+        <img src="./imgs/training-2-bigroom.jpg" alt="大型 AI 培训" loading="lazy" onerror="this.style.display='none'" />
+        <div class="gallery__caption">
+          <strong>AI 应用培训</strong>
+          <span>2024 · 大型会场</span>
+        </div>
       </div>
-      <div class="ability">
-        <div class="ability__no">03</div>
-        <div class="ability__name">社群运营</div>
-        <div class="ability__desc">88 场直播 + 72 场线下,5 年没断更。连接不同圈层的能力,让陌生人在我的场子里聊起来。</div>
-        <div class="ability__stars"><span class="on">★</span><span class="on">★</span><span class="off">★</span></div>
+      <div class="gallery__item">
+        <img src="./imgs/training-3-notion.jpg" alt="AI 工具实战" loading="lazy" onerror="this.style.display='none'" />
+        <div class="gallery__caption">
+          <strong>AI 工具实战</strong>
+          <span>2024 · 大型会场</span>
+        </div>
       </div>
-      <div class="ability">
-        <div class="ability__no">04</div>
-        <div class="ability__name">内容创作</div>
-        <div class="ability__desc">公众号「做清洗剂的三哥」+ 视频号「吴桐荟」。罗振宇启发体 × 工业老兵务实派,不端学术架子。</div>
-        <div class="ability__stars"><span class="on">★</span><span class="on">★</span><span class="off">★</span></div>
+      <div class="gallery__item">
+        <img src="./imgs/training-4-selfie.jpg" alt="培训合影" loading="lazy" onerror="this.style.display='none'" />
+        <div class="gallery__caption">
+          <strong>学员合影</strong>
+          <span>30+ 学员</span>
+        </div>
       </div>
-      <div class="ability">
-        <div class="ability__no">05</div>
-        <div class="ability__name">商业思维</div>
-        <div class="ability__desc">第一性原理 · 订阅制 · 超级个体路径。8 个项目互相不冲突,反而互锁成飞轮。</div>
-        <div class="ability__stars"><span class="on">★</span><span class="on">★</span><span class="off">★</span></div>
+      <div class="gallery__item gallery__item--tall">
+        <img src="./imgs/training-5-lawfirm.jpg" alt="上海中源(苏州)律师事务所合影" loading="lazy" onerror="this.style.display='none'" />
+        <div class="gallery__caption">
+          <strong>律师 AI 陪跑</strong>
+          <span>上海中源(苏州)律师事务所</span>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img src="./imgs/training-6-longxia.jpg" alt="龙虾研讨会 — 企业 AI 落地" loading="lazy" onerror="this.style.display='none'" />
+        <div class="gallery__caption">
+          <strong>龙虾研讨会</strong>
+          <span>企业 AI 落地</span>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img src="./imgs/training-7-openclaw.jpg" alt="OpenClaw 工具培训" loading="lazy" onerror="this.style.display='none'" />
+        <div class="gallery__caption">
+          <strong>工具实战</strong>
+          <span>OpenClaw 培训</span>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img src="./imgs/training-8-fangzheng.jpg" alt="方正·智谷 AI 培训" loading="lazy" onerror="this.style.display='none'" />
+        <div class="gallery__caption">
+          <strong>方正·智谷</strong>
+          <span>AI 智慧产业园</span>
+        </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="abilities__weak" data-reveal>
-      <div class="abilities__weak__label">短板自知</div>
-      <ul class="abilities__weak__list">
-        <li>AI 算法 / 底层技术原理不强(不装地承认)</li>
-        <li>纯技术开发不擅长(这正好是 AI 工程师的活)</li>
-        <li>对 C 端爆款逻辑不熟(也不打算追)</li>
-      </ul>
+<!-- ============ SELF-BUILT SOFTWARE ============ -->
+<section class="section section--paper" id="software">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <div>
+        <div class="section__no">— 06 / 自研软件</div>
+        <h2 class="section__title serif">造工具,这件事。</h2>
+      </div>
+      <p class="section__sub">
+        我电脑里有些软件,是自己开发的。造工具这件事,跟"用工具"是两回事 —— 用得多了,就觉得可以自己造一个更顺手的。
+      </p>
+    </div>
+
+    <div class="sw__list" data-reveal>
+      <a class="sw__card sw__card--primary" href="https://ssj198807-maker.github.io/self-media-platform/" target="_blank" rel="noopener">
+        <span class="sw__card__tag">公开</span>
+        <div class="sw__card__name">吴桐荟剪辑</div>
+        <div class="sw__card__kind">直播复盘 · 视频工具</div>
+        <p class="sw__card__desc">给我自己的直播和课程用的剪辑工具。跑通了,先开放给跟我一样需要频繁产出视频的人。</p>
+        <div class="sw__card__url">ssj198807-maker.github.io/self-media-platform</div>
+      </a>
+      <div class="sw__card">
+        <span class="sw__card__tag">仅自用</span>
+        <div class="sw__card__name">客户跟进自动化</div>
+        <div class="sw__card__kind">内部工具</div>
+        <p class="sw__card__desc">给自己厂里和陪跑客户用的客户跟进 + 报表自动化。本地跑,不公开。</p>
+        <div class="sw__card__url">仅个人使用</div>
+      </div>
+      <div class="sw__card">
+        <span class="sw__card__tag">仅自用</span>
+        <div class="sw__card__name">内容生产看板</div>
+        <div class="sw__card__kind">内容工具</div>
+        <p class="sw__card__desc">给公众号【吴桐荟】和直播用的内容选题 + 排期工具。Markdown 写,本地跑。</p>
+        <div class="sw__card__url">仅个人使用</div>
+      </div>
     </div>
   </div>
 </section>
@@ -1357,11 +1539,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   <div class="container">
     <div class="section__head" data-reveal>
       <div>
-        <div class="section__no">— 05 / 我的写作</div>
-        <h2 class="section__title serif">公众号 ·<br/>做清洗剂的三哥。</h2>
+        <div class="section__no">— 07 / 我的写作</div>
+        <h2 class="section__title serif">公众号 ·<br/>吴桐荟。</h2>
       </div>
       <p class="section__sub">
-        每周 2-3 篇。不追热点,只写自己踩过坑的事。文风是「罗振宇启发体 × 工业老兵务实派」,句子短,金句压头,不端学术架子。
+        公众号叫【吴桐荟】,跟社群同名。不追热点,只写自己踩过坑的事。
+        文风是「罗振宇启发体 × 工业老兵务实派」,句子短,金句压头,不端学术架子。
       </p>
     </div>
 
@@ -1394,10 +1577,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
       </div>
       <div class="quote__card" data-reveal>
         <h3>三哥说 —</h3>
-        <p class="quote__main">「AI 不是学会的,<em>是骑上去的</em>。<br/>联机才能落地,<br/>一个人研究是研究不出感觉的。」</p>
+        <p class="quote__main">「先让你的一个部门、<em>一个岗位</em>,先赢一次。<br/>之后,才是全员。」</p>
         <div class="quote__by">— 三哥 · 第 88 场直播</div>
         <div class="quote__more">
-          <span>不装</span><span>AI 农民工</span><span>三条腿走路</span><span>把复杂讲简单</span><span>能讲出来才是自己的</span>
+          <span>不装</span><span>先赢后变</span><span>三条腿走路</span><span>把复杂讲简单</span><span>能讲出来才是自己的</span>
         </div>
       </div>
     </div>
@@ -1409,11 +1592,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   <div class="container">
     <div class="section__head" data-reveal>
       <div>
-        <div class="section__no">— 06 / 找我聊聊</div>
+        <div class="section__no">— 08 / 找我聊聊</div>
         <h2 class="section__title serif">别在介绍里<br/>等我回复。</h2>
       </div>
       <p class="section__sub">
-        <b>正在签第 5 家年度 AI 陪跑客户</b>。如果你也在做企业 + AI 这件事,可以加我微信先聊。
+        <b>正在签更多企业 AI 落地客户</b>。如果你也在做企业 + AI 这件事,可以加我微信先聊。
         不一定要合作,先认识也行。
       </p>
     </div>
@@ -1427,20 +1610,25 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
       </div>
 
       <div class="contact__list" data-reveal>
-        <a class="contact__item" href="weixin://" data-copy="wutonghui_sange" data-copy-name="微信" data-toast="已复制微信 ID: wutonghui_sange">
+        <a class="contact__item" href="#" data-copy="wutonghui_sange" data-copy-name="微信" data-toast="已复制微信 ID: wutonghui_sange">
           <div class="contact__item__k">微信</div>
           <div class="contact__item__v">wutonghui_sange <small>公众号 / 视频号 / 个人号三合一</small></div>
           <span class="contact__item__a">复制 ID</span>
         </a>
         <a class="contact__item" href="#writing">
           <div class="contact__item__k">公众号</div>
-          <div class="contact__item__v">做清洗剂的三哥 <small>每周 2-3 篇 · 不追热点</small></div>
+          <div class="contact__item__v">吴桐荟 <small>每周 2-3 篇 · 不追热点</small></div>
           <span class="contact__item__a">去看文章</span>
         </a>
-        <a class="contact__item" href="#work">
+        <a class="contact__item" href="#gallery">
           <div class="contact__item__k">视频号</div>
-          <div class="contact__item__v">吴桐荟 <small>88 场直播回放</small></div>
+          <div class="contact__item__v">吴桐荟 <small>111 场直播回放</small></div>
           <span class="contact__item__a">看直播</span>
+        </a>
+        <a class="contact__item" href="https://ssj198807-maker.github.io/self-media-platform/" target="_blank" rel="noopener">
+          <div class="contact__item__k">自研工具</div>
+          <div class="contact__item__v">吴桐荟剪辑 <small>我自己开发的视频工具</small></div>
+          <span class="contact__item__a">去看一下</span>
         </a>
         <a class="contact__item" href="mailto:hi@sange.works" data-copy="hi@sange.works" data-copy-name="邮箱" data-toast="已复制邮箱: hi@sange.works">
           <div class="contact__item__k">邮箱</div>
@@ -1455,21 +1643,20 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="container footer__inner">
-    <span>© 2026 宋三继 / 三哥 · <b>苏州</b></span>
+    <span>© 2026 宋三继 / 三哥 · <b>苏州</b> · 1988</span>
     <span>本站素材与文案均来自本人真实经历 · 不虚构客户案例</span>
     <span>Built in Suzhou · 2026.08</span>
   </div>
 </footer>
 
 <!-- ============ TOAST ============ -->
-<div class="site-toast" id="toast" role="status" aria-live="polite" style="position: fixed; right: 24px; bottom: 24px; z-index: 200; display: flex; align-items: center; gap: 10px; padding: 12px 18px; border-radius: 10px; background: var(--ink); color: var(--paper); font-size: 13px; box-shadow: 0 14px 38px rgba(26,23,20,0.3); opacity: 0; transform: translateY(8px); transition: opacity 280ms var(--ease), transform 280ms var(--ease); pointer-events: none;">
-    <span aria-hidden="true" style="display: grid; width: 22px; height: 22px; place-items: center; border-radius: 50%; background: var(--amber); color: var(--ink); font-size: 11px; font-weight: 600;">✓</span>
-    <span id="toast-msg"></span>
-  </div>
+<div id="toast" role="status" aria-live="polite" style="position: fixed; right: 24px; bottom: 24px; z-index: 200; display: flex; align-items: center; gap: 10px; padding: 12px 18px; border-radius: 10px; background: var(--ink); color: var(--paper); font-size: 13px; box-shadow: 0 14px 38px rgba(26,23,20,0.3); opacity: 0; transform: translateY(8px); transition: opacity 280ms var(--ease), transform 280ms var(--ease); pointer-events: none;">
+  <span aria-hidden="true" style="display: grid; width: 22px; height: 22px; place-items: center; border-radius: 50%; background: var(--amber); color: var(--ink); font-size: 11px; font-weight: 600;">✓</span>
+  <span id="toast-msg"></span>
+</div>
 
 <script>
 (function () {
-  // ---- Sticky nav ----
   var nav = document.getElementById('topnav');
   var onScroll = function () {
     if (window.scrollY > 80) nav.classList.add('is-stuck');
@@ -1478,7 +1665,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // ---- Reveal on scroll (一次性) ----
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var targets = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));
   if (reduce || !('IntersectionObserver' in window)) {
@@ -1494,7 +1680,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     targets.forEach(function (el) { io.observe(el); });
   }
 
-  // ---- Copy + toast ----
   var toast = document.getElementById('toast');
   var toastMsg = document.getElementById('toast-msg');
   var toastTimer = null;
@@ -1536,7 +1721,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     });
   });
 
-  // ---- Smooth scroll for in-page anchors ----
   document.addEventListener('click', function (event) {
     var a = event.target.closest('a[href^="#"]');
     if (!a) return;
